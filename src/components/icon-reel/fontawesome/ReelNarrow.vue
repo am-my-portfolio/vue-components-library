@@ -1,0 +1,23 @@
+<template>
+  <div class="flex justify-center space-x-6 md:order-2">
+    <a v-for="item in items" :key="item.name" :href="item.href" :hidden="item.hidden" :class="[
+      txtColor,
+      'text-lg']" target="_blank">
+      <span class="sr-only">{{ item.name }}</span>
+      <span :class="item.icon"></span>
+    </a>
+  </div>
+</template>
+
+<script setup lang="ts">
+defineProps<{
+  txtColor: String, // hover:text-pop-primary 
+  bgColor: String,
+  items: {
+    name: string;
+    icon: string;
+    href?: string;
+    hidden?: boolean;
+  }[];
+}>();
+</script>
