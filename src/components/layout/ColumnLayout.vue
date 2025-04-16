@@ -3,17 +3,18 @@
     <div class="grid grid-cols-1 md:grid-cols-5 gap-10 items-center">
       <!-- Left Content -->
       <div class="col-span-1 md:col-span-3 space-y-2 md:space-y-6">
-        <h1
-          class="text-4xl md:text-6xl font-bold text-pop-secondary leading-tight"
-        >
+        <h1 :class="[
+          'text-pop-secondary',
+          'text-4xl md:text-6xl font-bold leading-tight'
+        ]">
           <slot name="title" />
         </h1>
 
-        <div class="flex space-x-12 text-pop-primary">
+        <div :class="['text-pop-primary', 'flex space-x-12']">
           <slot name="subTitle" />
         </div>
 
-        <p class="text-lg md:text-2xl text-secondary/50">
+        <p :class="['text-dull-secondary/50', 'text-lg md:text-2xl']">
           <slot name="description" />
         </p>
 
@@ -29,5 +30,3 @@
     </div>
   </div>
 </template>
-
-

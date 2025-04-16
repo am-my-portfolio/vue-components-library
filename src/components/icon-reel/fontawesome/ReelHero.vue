@@ -6,7 +6,7 @@
       :href="item.href"
       target="_blank"
       :class="[
-        txtColor,
+        'text-pop-primary hover:text-pop-secondary',
         'text-2xl md:text-6xl',
         item.hidden ? 'hidden' : '',
       ]"
@@ -19,8 +19,6 @@
 
 <script setup lang="ts">
 defineProps<{
-  txtColor: String, // text-pop-primary hover:text-pop-secondary
-  bgColor: String,
   items: {
     name: string;
     icon: string;

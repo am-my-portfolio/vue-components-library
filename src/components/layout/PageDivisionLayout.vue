@@ -1,10 +1,10 @@
 <template>
-  <div class="mt-10 divide-y divide-secondary">
+  <div class="mt-10 divide-y divide-dull-secondary">
     <div class="space-y-1">
       <h3 class="text-lg font-medium leading-6 text-pop-secondary">
         <slot name="divisionTitle" />
       </h3>
-      <p class="max-w-2xl text-sm text-secondary">
+      <p class="max-w-2xl text-sm text-dull-secondary">
         <slot name="divisionDescription" />
       </p>
     </div>

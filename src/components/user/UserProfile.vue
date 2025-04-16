@@ -29,6 +29,8 @@
       <div v-else class="mt-6 text-secondary">
         <p>@{{ user.nickname }} | 29 | Fr</p>
         <p>WCIF friendly</p>
+
+        <!-- TODO: figure this out, how to extract roles -->
         <p v-if="user['sam.co/roles']">
           <span class="text-pop-primary">Roles: </span>
           {{ user["sam.co/roles"] }}
@@ -56,11 +58,18 @@
 </template>
 
 <script setup lang="ts">
-import { User, useAuth0 } from "@auth0/auth0-vue";
 
-const { isAuthenticated } = useAuth0();
+interface IUser {
+  name: string;
+  nickname: string;
+  email: string;
+  picture: string;
+  summary: string;
+  [key: string]: string;
 
+}
 defineProps<{
-  user: User;
+  user: IUser;
+  isAuthenticated: boolean;
 }>();
 </script>

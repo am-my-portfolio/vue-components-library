@@ -16,6 +16,7 @@
 - https://medium.com/@blaster203/how-to-create-a-component-library-with-vue-3-vitejs-typescript-8eb41f799045
 - https://dev.to/peshanghiwa/publishing-a-vue-3-typescript-component-library-to-github-packages-46ec
 
+===>>> https://levelup.gitconnected.com/using-vite-to-publish-a-vue-component-to-npm-7043a56cfa00
 
 - https://github.com/PCkelley/florida-components/blob/main/package.json
 - https://github.com/mihailtd/demo-monorepo/tree/main/packages/ui-lib
