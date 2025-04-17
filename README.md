@@ -1,6 +1,19 @@
 # Introduction
 A set of Vuejs (v3) components build with Tailwindcss (v4), Fontawesome, and Iconify.
 
+#### TailwindCss
+- https://tailwindcss.com/
+- https://tailwindcss.com/docs/installation/using-vite
+
+#### Fontawesome
+- https://fontawesome.com/icons
+- https://docs.fontawesome.com/web/use-with/vue
+
+#### Iconify
+- https://iconify.design/
+- https://iconify.design/docs/icon-components/vue/
+
+
 
 # Usage
 - `npm i @am-ogs/vue-ui`
