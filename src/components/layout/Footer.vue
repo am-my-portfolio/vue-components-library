@@ -19,6 +19,7 @@
 </template>
 
 <script setup lang="ts">
+// TODO: create an Interface for this
 defineProps<{
   copyright: string;
   items: {
@@ -27,4 +28,49 @@ defineProps<{
     icon: string;
   }[]
 }>()
+
+// Example 
+// https://fontawesome.com/search
+// const socials = [
+//   {
+//     name: "website",
+//     href: "https://afshan-martin.pages.dev",
+//     icon: "fa-solid fa-globe",
+//   },
+//   {
+//     name: "GitHub",
+//     href: "https://github.com/afshanaman81",
+//     icon: "fa-brands fa-github",
+//   },
+//   {
+//     name: "LinkedIn",
+//     href: "https://www.linkedin.com/in/afshan-aman",
+//     icon: "fa-brands fa-linkedin",
+//   },
+//   {
+//     name: "X",
+//     href: "https://x.com/XXXXX",
+//     icon: "fa-brands fa-twitter",
+//   },
+//   {
+//     name: "Instagram",
+//     href: "https://instagram.com/XXXXX",
+//     icon: "fa-brands fa-instagram",
+//   },
+//   {
+//     name: "facebook",
+//     href: "https://discord.gg/XXXXXX",
+//     icon: "fa-brands fa-facebook",
+//   },
+//   {
+//     name: "Discord",
+//     href: "https://discord.gg/XXXXXX",
+//     icon: "fa-brands fa-discord",
+//   },
+//   {
+//     name: "YouTube",
+//     href: "https://www.youtube.com/XXXXX",
+//     icon: "fa-brands fa-youtube",
+//   },
+// ];
 </script>

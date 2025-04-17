@@ -14,6 +14,7 @@
 </template>
 
 <script setup lang="ts">
+// TODO: make an interface for this
 defineProps<{
   items: {
     name: string;

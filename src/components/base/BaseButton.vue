@@ -1,7 +1,8 @@
 <template>
-  <button :class="[
-    'w-fit px-12 py-3',
-    'text-lg font-semibold',
+  <button :disabled="disabled" :class="[
+    disabled,
+    'w-fit min-w-44 max-w-72 px-12 py-3',
+    'text-md md:text-lg font-semibold',
     'text-pop-primary hover:text-dull-primary',
     'bg-pop-secondary/50 hover:bg-pop-primary ',
     'transition rounded-lg shadow-lg hover:border-transparent']">
@@ -12,5 +13,6 @@
 <script setup lang="ts">
 defineProps({
   text: String,
+  disabled: Boolean,
 });
 </script>

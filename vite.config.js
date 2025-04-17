@@ -16,8 +16,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: path.resolve(__dirname, 'src/components/index.ts'),
-      name: 'UiLib',
-      fileName: (format) => `ui-lib.${format}.js`,
+      name: 'VUI',
+      fileName: (format) => `vue-ui.${format}.js`,
     },
     rollupOptions: {
       external: ['vue'],

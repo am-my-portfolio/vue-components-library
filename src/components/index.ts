@@ -21,6 +21,6 @@ export { default as PageLayout } from "./layout/PageLayout.vue";
 export { default as PageDivisionLayout } from "./layout/PageDivisionLayout.vue";
 
 // Profile
-export { default as UserProfile } from "./user/UserProfile.vue";
+export { default as ProfileCard } from "./user/ProfileCard.vue";
 
 
