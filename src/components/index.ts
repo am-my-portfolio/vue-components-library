@@ -13,12 +13,14 @@ export { default as ReelNarrowIc } from "./icon-reel/iconify/ReelNarrow.vue";
 export { default as ReelWideIc } from "./icon-reel/iconify/ReelWide.vue";
 
 // Layouts
-export { default as ColumnLayout } from "./layout/ColumnLayout.vue";
-export { default as RowLayout } from "./layout/RowLayout.vue";
-export { default as Header } from "./layout/Header.vue";
-export { default as Footer } from "./layout/Footer.vue";
+export { default as SiteLayout } from "./layout/SiteLayout.vue";
 export { default as PageLayout } from "./layout/PageLayout.vue";
 export { default as PageDivisionLayout } from "./layout/PageDivisionLayout.vue";
+export { default as ColumnLayout } from "./layout/ColumnLayout.vue";
+export { default as RowLayout } from "./layout/RowLayout.vue";
+export { default as TopNavigation } from "./layout/TopNavigation.vue"
+export { default as Header } from "./layout/Header.vue";
+export { default as Footer } from "./layout/Footer.vue";
 
 // Profile
 export { default as ProfileCard } from "./user/ProfileCard.vue";

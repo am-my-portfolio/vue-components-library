@@ -17,7 +17,7 @@
       <div v-else class="mt-6 text-dull-secondary">
         <p>@{{ user.nickname }} | 29 | Fr</p>
         <p>WCIF friendly</p>
-        <p v-if="user[role_key]">
+        <p v-if="role_key && user[role_key]">
           <span class="text-pop-primary">Roles: </span>
           {{ user[role_key] }}
         </p>
@@ -64,8 +64,8 @@ interface IUser {
 }
 defineProps<{
   user: IUser;
-  role_key: string;
-  is_authenticated: boolean;
+  role_key?: string;
+  is_authenticated?: boolean;
 }>();
 
 </script>

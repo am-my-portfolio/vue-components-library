@@ -20,6 +20,22 @@ A set of Vuejs (v3) components build with Tailwindcss (v4), Fontawesome, and Ico
 - `pnpm add @am-ogs/vue-ui`
 - `yarn add @am-ogs/vue-ui`
 
+## Config 
+- in the `tailwind.config.js` file of your VueJs app:
+```
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    './index.html',
+    './src/**/*.{vue,js,ts,jsx,tsx}',
+    'node_modules/@am-ogs/vue-ui/**/*.js', // <<-- this is important
+  ],
+  ...
+```
+
+
+## In a component
+
 ```
 <template>
     <div class="mt-10 text-center">

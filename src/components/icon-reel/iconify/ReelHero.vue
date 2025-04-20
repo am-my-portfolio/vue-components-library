@@ -3,7 +3,7 @@
     <a v-for="item in items" :key="item.name" :href="item.href" target="_blank">
       <span class="sr-only">{{ item.name }}</span>
       <Icon :icon="item.icon" :class="[
-        'text-4xl xl:text-6xl',
+        'text-xl md:text-3xl lg:text-5xl',
         'text-pop-primary hover:text-pop-secondary',
       ]" />
     </a>
