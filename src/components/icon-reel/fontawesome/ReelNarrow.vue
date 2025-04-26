@@ -3,7 +3,7 @@
     <a v-for="item in items" :key="item.name" :href="item.href" :hidden="item.hidden" :class="[
       'hover:text-pop-primary',
       'text-lg']" target="_blank">
-      <span class="sr-only">{{ item.name }}</span>
+      <span class="sr-only fixed">{{ item.name }}</span>
       <span :class="item.icon"></span>
     </a>
   </div>

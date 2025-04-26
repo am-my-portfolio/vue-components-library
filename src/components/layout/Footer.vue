@@ -8,7 +8,7 @@
     <div id="ogs-footer-socials" class="md:order-2 text-center justify-center space-x-6 ">
       <a v-for="item in items" :key="item.name" :href="item.href" class="hover:text-pop-primary text-lg"
         target="_blank">
-        <span class="sr-only">{{ item.name }}</span>
+        <span class="sr-only fixed">{{ item.name }}</span>
         <span :class="item.icon"></span>
       </a>
     </div>

@@ -7,7 +7,7 @@
       'text-pop-primary hover:text-pop-secondary',
       item.hidden ? 'hidden' : '',
     ]">
-      <span class="sr-only">{{ item.name }}</span>
+      <span class="sr-only fixed">{{ item.name }}</span>
       <span :class="item.icon"></span>
     </a>
   </div>
