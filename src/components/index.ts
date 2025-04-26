@@ -1,6 +1,9 @@
-export { default as BaseButton } from "./base/BaseButton.vue";
 export { default as LoadingSpinner } from "./common/LoadingSpinner.vue";
 export { default as ThemeToggle } from "./common/ThemeToggle.vue";
+
+// Buttons
+export { default as BaseButton } from "./base/BaseButton.vue";
+export { default as LoginButton } from "./user/LoginButton.vue";
 
 // Reels
 export { default as ReelHeroFa } from "./icon-reel/fontawesome/ReelHero.vue";
