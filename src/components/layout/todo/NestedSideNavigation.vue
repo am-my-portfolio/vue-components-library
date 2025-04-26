@@ -40,25 +40,24 @@
             </div>
           </div>
         </summary>
-        <div>
+        <!-- <div>
           <RecursiveSidebar
             v-if="item.items && item.items.length > 0"
             :items="item.items"
             :level="level + 1"
             class="ml-8"
           />
-        </div>
+        </div> -->
       </details>
     </li>
   </ul>
 </template>
 
 <script setup lang="ts">
-import { Item } from '@/helpers/index';
-import RecursiveSidebar from './SideNavigation.vue';
+import RecursiveSidebar from "./SideNavigation.vue";
 
 const { items } = defineProps<{
   level: number;
-  items: Item[];
+  items: any[];
 }>();
 </script>

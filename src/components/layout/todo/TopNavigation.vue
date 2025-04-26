@@ -1,11 +1,13 @@
 <template>
   <!-- Navigation Bar -->
-  <nav :class="[
-    'flex w-full',
-    'bg-dull-primary',
-    'items-center justify-between',
-    'border-b border-pop-secondary shadow-lg',
-  ]">
+  <nav
+    :class="[
+      'flex w-full',
+      'bg-dull-primary',
+      'items-center justify-between',
+      'border-b border-pop-secondary shadow-lg',
+    ]"
+  >
     <!-- Logo -->
     <div class="flex items-center">
       <slot name="logo" />
@@ -19,7 +21,7 @@
         </a>
       </div>
 
-      <div class="ml-24" >
+      <div class="ml-24">
         <slot name="themeToggle" />
       </div>
     </div>
@@ -30,7 +32,7 @@
 
 <script setup lang="ts">
 defineProps<{
-  handler: any
-  landing_page_navigation: any[]
+  handler: any;
+  landing_page_navigation: any[];
 }>();
 </script>
