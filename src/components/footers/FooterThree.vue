@@ -12,13 +12,16 @@
     Row 1: Left: Socials, Right: Privacy Policys (stretched across/justified-between)
     Row 2: Copyright information, vertically aligned, and center justified
   -->
-  <footer id="ogs-footer-three" :class="[
-    'md:flex p-2',
-    'text-xs',
-    colors?.text,
-    'border-t-2',
-    colors?.border,
-  ]">
+  <footer
+    id="ogs-footer-three"
+    :class="[
+      'md:flex p-2',
+      'text-xs',
+      colors?.text,
+      'border-t-2',
+      colors?.border,
+    ]"
+  >
     <!-- wide screen -->
     <div class="hidden md:flex md:w-full md:justify-between md:py-2">
       <div class="md:order-1">
@@ -32,9 +35,14 @@
 
       <div class="md:order-2">
         <div class="space-x-5 text-center justify-center">
-          <a v-for="item in socials" :hidden="item.hidden" :key="item.name" :href="item.href"
-            :class="[colors?.txt_hover]" target="_blank">
-            
+          <a
+            v-for="item in socials"
+            :hidden="item.hidden"
+            :key="item.name"
+            :href="item.href"
+            :class="[colors?.txt_hover]"
+            target="_blank"
+          >
             <span :class="[item.icon, 'text-lg']"></span>
           </a>
           <span class="font-thin">|</span>
@@ -45,11 +53,21 @@
       <div class="md:order-3">
         <div class="flex space-x-1 text-right">
           <div v-for="(policy, index) in policies" class="space-x-2">
-            <a :href="policy.href" target="_blank" :class="[
-              'underline visited:text-purple-600', colors?.text,
-              colors?.txt_hover,
-            ]">{{ policy.text }}</a>
-            <span v-if="policies?.length && index < policies.length - 1" class="font-thin">|</span>
+            <a
+              :href="policy.href"
+              target="_blank"
+              :class="[
+                'underline visited:text-purple-600',
+                colors?.text,
+                colors?.txt_hover,
+              ]"
+              >{{ policy.text }}</a
+            >
+            <span
+              v-if="policies?.length && index < policies.length - 1"
+              class="font-thin"
+              >|</span
+            >
           </div>
         </div>
       </div>
@@ -60,9 +78,14 @@
       <div id="ogs-footer-row-one" class="flex items-center justify-between">
         <div class="order-1">
           <div class="flex space-x-2 items-center justify-center">
-          <a v-for="item in socials" :hidden="item.hidden" :key="item.name" :href="item.href"
-            :class="[colors?.txt_hover]" target="_blank">
-              
+            <a
+              v-for="item in socials"
+              :hidden="item.hidden"
+              :key="item.name"
+              :href="item.href"
+              :class="[colors?.txt_hover]"
+              target="_blank"
+            >
               <span :class="[item.icon, 'text-lg']"></span>
             </a>
             <span class="font-thin">|</span>
@@ -73,11 +96,21 @@
         <div class="order-2">
           <div class="flex space-x-2 items-center justify-center">
             <div v-for="(policy, index) in policies" class="space-x-2">
-              <a :href="policy.href" target="_blank" :class="[
-                'underline visited:text-purple-600', colors?.text,
-                colors?.txt_hover,
-              ]">{{ policy.text }}</a>
-              <span v-if="policies?.length && index < policies.length - 1" class="font-thin">|</span>
+              <a
+                :href="policy.href"
+                target="_blank"
+                :class="[
+                  'underline visited:text-purple-600',
+                  colors?.text,
+                  colors?.txt_hover,
+                ]"
+                >{{ policy.text }}</a
+              >
+              <span
+                v-if="policies?.length && index < policies.length - 1"
+                class="font-thin"
+                >|</span
+              >
             </div>
           </div>
         </div>

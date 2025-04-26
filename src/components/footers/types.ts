@@ -14,7 +14,7 @@ export interface IFooterProps {
   policies?: {
     text: string;
     href: string;
-  }[]
+  }[];
 }
 
 // Example

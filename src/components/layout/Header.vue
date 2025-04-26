@@ -8,6 +8,7 @@
       class="-m-2.5 p-2.5 text-pop-secondary lg:hidden"
       @click="sidebarOpen = true"
     >
+      <span class="sr-only fixed">Open sidebar</span>
       <i
         class="fa-solid fa-bars text-pop-secondary mt-1 text-2xl"
         aria-hidden="true"
@@ -21,7 +22,7 @@
     <div class="flex flex-1 gap-x-4 self-stretch lg:gap-x-6">
       <!-- Search  -->
       <form class="relative flex flex-1 m-1" action="#" method="GET">
-        <label for="search-field" class="sr-only">Search</label>
+        <label for="search-field" class="sr-only fixed">Search</label>
         <i
           class="fa-solid fa-magnifying-glass text-pop-secondary pointer-events-none absolute inset-y-5 left-2 text-lg"
           aria-hidden="true"
@@ -41,6 +42,7 @@
           type="button"
           class="-m-2.5 p-2.5 text-pop-secondary hover:text-secondary"
         >
+          <span class="sr-only fixed">View notifications</span>
           <i
             class="fa-regular fa-bell fa-shake text-pop-secondary mt-1 text-xl"
             style="
