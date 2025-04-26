@@ -1,7 +1,11 @@
 <template>
   <SiteLayout :is_authenticated="isAuthenticated">
     <template #sideMenu>
-      <SideMenu :level="1" :primary_navigation="primary_navigation" :secondary_navigation="secondary_navigation">
+      <SideMenu
+        :level="1"
+        :primary_navigation="primary_navigation"
+        :secondary_navigation="secondary_navigation"
+      >
         <template #logo>
           <img src="/background.png" alt="logo" class="h-20 rounded-md" />
         </template>
@@ -27,23 +31,37 @@
     </template>
 
     <template #footer>
-      <FooterOne copyright_year="2025" :socials="socials" :colors="{
-        text: 'text-lime-700',
-        border: 'border-yellow-700',
-        txt_hover: 'hover:text-red-500',
-      }" />
+      <FooterOne
+        copyright_year="2025"
+        :socials="socials"
+        :colors="{
+          text: 'text-lime-700',
+          border: 'border-yellow-700',
+          txt_hover: 'hover:text-red-500',
+        }"
+      />
 
-      <FooterTwo copyright_year="2025" :socials="socials" :policies="policies" :colors="{
-        text: 'text-lime-700',
-        border: 'border-yellow-700',
-        txt_hover: 'hover:text-red-500',
-      }" />
+      <FooterTwo
+        copyright_year="2025"
+        :socials="socials"
+        :policies="policies"
+        :colors="{
+          text: 'text-lime-700',
+          border: 'border-yellow-700',
+          txt_hover: 'hover:text-red-500',
+        }"
+      />
 
-      <FooterThree copyright_year="2025" :socials="socials" :policies="policies" :colors="{
-        text: 'text-lime-700',
-        border: 'border-yellow-700',
-        txt_hover: 'hover:text-red-500',
-      }" />
+      <FooterThree
+        copyright_year="2025"
+        :socials="socials"
+        :policies="policies"
+        :colors="{
+          text: 'text-lime-700',
+          border: 'border-yellow-700',
+          txt_hover: 'hover:text-red-500',
+        }"
+      />
     </template>
   </SiteLayout>
 </template>
@@ -57,7 +75,7 @@ import {
   SideMenu,
   FooterOne,
   FooterTwo,
-  FooterThree
+  FooterThree,
 } from "@/components";
 import {
   landing_page_navigation,
@@ -73,7 +91,6 @@ const socials = [
     name: "website",
     href: "https://abc.com",
     icon: "fa-solid fa-globe",
-
   },
   {
     name: "GitHub",
@@ -90,14 +107,14 @@ const socials = [
 
 const policies = [
   {
-    text: 'Waitlist Privacy Notice',
-    href: '/waitlist-policy'
+    text: "Waitlist Privacy Notice",
+    href: "/waitlist-policy",
   },
   {
-    text: 'Privacy Policy',
-    href: '/privacy-policy'
-  }
-]
+    text: "Privacy Policy",
+    href: "/privacy-policy",
+  },
+];
 
 const handleScroll = async (value: any) => {
   console.log("scrolling to", value);
