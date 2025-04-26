@@ -8,7 +8,6 @@
       class="-m-2.5 p-2.5 text-pop-secondary lg:hidden"
       @click="sidebarOpen = true"
     >
-      <span class="sr-only">Open sidebar</span>
       <i
         class="fa-solid fa-bars text-pop-secondary mt-1 text-2xl"
         aria-hidden="true"
@@ -42,7 +41,6 @@
           type="button"
           class="-m-2.5 p-2.5 text-pop-secondary hover:text-secondary"
         >
-          <span class="sr-only">View notifications</span>
           <i
             class="fa-regular fa-bell fa-shake text-pop-secondary mt-1 text-xl"
             style="
@@ -61,6 +59,7 @@
         />
 
         <!-- <ProfileButton /> -->
+        <slot name="profileButton" />
       </div>
     </div>
   </div>
@@ -68,7 +67,6 @@
 
 <script setup lang="ts">
 import { ref } from "vue";
-// import ProfileButton from "@/components/identity/ProfileButton.vue";
 
 const sidebarOpen = ref(false);
 </script>

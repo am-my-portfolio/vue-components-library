@@ -79,8 +79,8 @@
 </template>
 
 <script setup lang="ts">
-import { kebabCase } from 'lodash';
-import { Item, userHasAnyRoles } from '@/helpers';
+import { kebabCase } from "lodash";
+import { Item, userHasAnyRoles } from "@/helpers/navigation";
 
 const { primary_items, secondary_items } = defineProps<{
   level: number;

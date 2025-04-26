@@ -10,7 +10,7 @@
         item.hidden ? 'hidden' : '',
       ]"
     >
-      <span class="sr-only">{{ item.name }}</span>
+      
       <Icon :icon="item.icon" class="text-6xl" />
     </a>
   </div>

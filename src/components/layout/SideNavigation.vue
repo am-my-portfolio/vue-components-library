@@ -3,7 +3,7 @@
 
   <nav class="flex flex-1 flex-col">
     <ul role="list" class="flex flex-1 flex-col mt-2">
-      <li v-for="(item, index) in primary_items" :key="index">
+      <li v-for="(item, index) in primary_navigation" :key="index">
         <div :class="['cursor-pointer', 'w-full rounded-md my-2']">
           <a
             :href="`/${kebabCase(item.name)}`"
@@ -29,7 +29,7 @@
     </ul>
 
     <ul role="list" class="flex flex-col mt-auto mb-10">
-      <li v-for="(item, index) in secondary_items" :key="index">
+      <li v-for="(item, index) in secondary_navigation" :key="index">
         <div :class="['cursor-pointer', 'w-full rounded-md my-2']">
           <a
             :href="`/${kebabCase(item.name)}`"
@@ -57,12 +57,11 @@
 </template>
 
 <script setup lang="ts">
-import { kebabCase } from 'lodash';
-import { Item, userHasAnyRoles } from '@/helpers';
+import { kebabCase } from "lodash";
 
-const { primary_items, secondary_items } = defineProps<{
+defineProps<{
   level: number;
-  primary_items: Item[];
-  secondary_items: Item[];
+  primary_navigation: any[];
+  secondary_navigation: any[];
 }>();
 </script>
