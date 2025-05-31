@@ -16,12 +16,13 @@
       <div v-if="is_authenticated" id="ogs-sl-header-authenticated" class="sticky top-0 z-40 lg:px-8">
         <slot name="header" />
       </div>
-      <div v-else id="ogs-sl-top-nav-public" class="sticky top-0 z-40 sm:px-6 lg:px-36">
+      <div v-else id="ogs-sl-top-nav-public" class="sticky top-0 z-40 mx-4">
         <slot name="topNavigation" />
       </div>
 
-      <main id="ogs-sl-main" 
-        :class="['mb-auto mx-auto w-full overflow-auto scrollbar', 'px-4 sm:px-6', is_authenticated ? 'lg:px-24' : 'lg:px-36']">      >
+      <main id="ogs-sl-main"
+        :class="['mb-auto mx-auto w-full overflow-auto scrollbar', 'px-4 sm:px-6', is_authenticated ? 'lg:px-24' : 'lg:px-36']"
+        >
         <slot name="toast" />
         <slot name="routerView" />
       </main>
