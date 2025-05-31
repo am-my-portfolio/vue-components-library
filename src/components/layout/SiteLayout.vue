@@ -20,7 +20,8 @@
         <slot name="topNavigation" />
       </div>
 
-      <main id="ogs-sl-main" class="mb-auto mx-auto w-full py-4 px-4 sm:px-6 lg:px-24 overflow-auto scrollbar">
+      <main id="ogs-sl-main" 
+        :class="['mb-auto mx-auto w-full overflow-auto scrollbar', 'px-4 sm:px-6', is_authenticated ? 'lg:px-24' : 'lg:px-36']">      >
         <slot name="toast" />
         <slot name="routerView" />
       </main>

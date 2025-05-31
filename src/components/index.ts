@@ -24,7 +24,7 @@ export { default as TopNavigation } from "./layout/todo/TopNavigation.vue";
 export { default as Header } from "./layout/Header.vue";
 export { default as SideMenu } from "./layout/SideMenu.vue";
 export { default as SideNavigation } from "./layout/SideNavigation.vue";
-
+export { default as ItemsGridLayout } from "./layout/ItemsGridLayout.vue";
 // Footers
 export { default as FooterOne } from "./footers/FooterOne.vue";
 export { default as FooterTwo } from "./footers/FooterTwo.vue";
