@@ -3,7 +3,7 @@
     <BaseButton :text=text @click="handler" />
   </div>
 
-  <button @click="handler" class="flex md:hidden px-4 text-btn-txt dark:text-pop-secondary hover:text-btn-hover">
+  <button @click="handler" class="flex md:hidden px-4 text-pop-secondary dark:text-btn-txt hover:text-btn-hover">
     <i class="fa-solid fa-arrow-right-to-bracket text-3xl"></i>
   </button>
 </template>

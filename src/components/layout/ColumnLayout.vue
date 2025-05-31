@@ -27,7 +27,7 @@
 
         <p
           id="ogs-cl-description"
-          :class="['text-dull-secondary/50', 'text-lg md:text-2xl']"
+          :class="['text-dull-secondary', 'text-lg md:text-2xl']"
         >
           <slot name="description" />
         </p>
